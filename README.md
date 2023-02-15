@@ -40,11 +40,9 @@
 ``````
 //获取活跃节点接口
 curl --location --request GET 'http://127.0.0.1:9001/api/task/node' \
---header 'User-Agent: apifox/1.0.0'
 
 //提交区块任务
 curl --location --request POST 'http://127.0.0.1:9001/api/task/block' \
---header 'User-Agent: apifox/1.0.0 (https://www.apifox.cn)' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "blockChain": 200,
@@ -54,7 +52,6 @@ curl --location --request POST 'http://127.0.0.1:9001/api/task/block' \
 
 //提交单个交易任务
 curl --location --request POST 'http://127.0.0.1:9001/api/task/tx' \
---header 'User-Agent: apifox/1.0.0 (https://www.apifox.cn)' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "blockChain": 200,
@@ -63,7 +60,6 @@ curl --location --request POST 'http://127.0.0.1:9001/api/task/tx' \
 
 //提交耽搁收据任务
 curl --location --request POST 'http://127.0.0.1:9001/api/task/receipt' \
---header 'User-Agent: apifox/1.0.0 (https://www.apifox.cn)' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "blockChain": 200,
@@ -72,7 +68,6 @@ curl --location --request POST 'http://127.0.0.1:9001/api/task/receipt' \
 
 //提交区块下所有交易任务
 curl --location --request POST 'http://127.0.0.1:9001/api/task/txs' \
---header 'User-Agent: apifox/1.0.0 (https://www.apifox.cn)' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "blockChain": 200,
@@ -82,7 +77,6 @@ curl --location --request POST 'http://127.0.0.1:9001/api/task/txs' \
 
 //提交区块下所有收据任务
 curl --location --request POST 'http://127.0.0.1:9001/api/task/txs' \
---header 'User-Agent: apifox/1.0.0 (https://www.apifox.cn)' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "blockChain": 200,
